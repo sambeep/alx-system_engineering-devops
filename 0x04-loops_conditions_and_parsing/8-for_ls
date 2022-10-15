@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
-# Displays the content of the current directory in list format
-[>77;30601;0c]10;rgb:bfbf/bfbf/bfbf]11;rgb:0000/0000/0000
-LIST="$(ls -1)"
-for i in $LIST; do
-    echo "$i" | cut -d'-' -f2
-done#!/usr/bin/env bash
-# Displays the content of the current directory in list format
+# displays the content of the current working directory.
 
-LIST="$(ls -1)"
-for i in $LIST; do
+for i in *
+do
     echo "$i" | cut -d'-' -f2
 done
